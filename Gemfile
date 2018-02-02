@@ -16,5 +16,6 @@ end
 group :test do
   gem 'rspec', '~> 3.7.0'
   gem 'selenium-webdriver', '~> 3.8.0'
-  gem "fakeredis", :require => "fakeredis/rspec"
+  gem 'rack-test', require: 'rack/test'
+  gem 'fakeredis', :require => 'fakeredis/rspec'
 end

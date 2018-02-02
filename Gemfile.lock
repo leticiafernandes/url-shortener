@@ -17,6 +17,8 @@ GEM
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
+    rack-test (0.8.2)
+      rack (>= 1.0, < 3)
     redis (4.0.1)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
@@ -50,6 +52,7 @@ DEPENDENCIES
   fakeredis
   foreman (~> 0.84.0)
   pry
+  rack-test
   redis (~> 4.0.1)
   rspec (~> 3.7.0)
   selenium-webdriver (~> 3.8.0)
