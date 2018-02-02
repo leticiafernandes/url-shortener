@@ -1,0 +1,33 @@
+<div class="text-center">
+	<h1 id="title" class="display-4">url shortner</h1>
+</div>
+
+<form id="form" method="post">
+	<div class="form-group">
+		<div class="row">
+			<div class="col-md-10">
+				<input type="text" class="form-control" value="<%= params[:url] %>" name="url" 
+					pattern="^(http|https):\/\/.*$" required autofocus />
+			</div>
+
+			<div class="col-md-2">
+				<button id="button" type="submit" class="btn btn-primary submit-button">
+					shorten url
+				</button>
+			</div>	
+		</div>
+	</div>
+</form>
+
+<hr />
+
+<% if @short_url %>
+	<div class="card">
+	  <div class="card-block">
+	    <h4 class="card-title">here is your url:</h4>
+	    <a href="http://localhost:9292/<%= @short_url %>" target="blank" class="generated-url">
+			http://localhost:9292/<%= @short_url %>
+		</a>
+	  </div>
+	</div>
+<% end %>
